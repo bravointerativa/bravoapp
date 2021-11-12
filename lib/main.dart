@@ -51,15 +51,15 @@ class _WebViewExampleState extends State<WebViewExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        //title: const Text('Bravo Interativa'),
-        backgroundColor: Colors.black,
-        // This drop down menu demonstrates that Flutter widgets can be shown over the web view.
-        actions: <Widget>[
-          NavigationControls(_controller.future),
-          //SampleMenu(_controller.future),
-        ],
-      ),
+      // appBar: AppBar(
+      //   //title: const Text('Bravo Interativa'),
+      //   backgroundColor: Colors.black,
+      //   // This drop down menu demonstrates that Flutter widgets can be shown over the web view.
+      //   actions: <Widget>[
+      //     NavigationControls(_controller.future),
+      //     //SampleMenu(_controller.future),
+      //   ],
+      // ),
       // We're using a Builder here so we have a context that is below the Scaffold
       // to allow calling Scaffold.of(context) so we can show a snackbar.
       body: Builder(builder: (BuildContext context) {
